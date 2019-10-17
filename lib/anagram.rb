@@ -15,7 +15,7 @@ class Anagram
       word = word.split('').sort.join('')
       matched_words << word if word == @word
     end
-
+    matched_words
   end
 
 end
