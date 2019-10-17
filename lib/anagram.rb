@@ -11,7 +11,8 @@ class Anagram
     matched_words = Array.new
     @words_array = words_array
     @word = @word.split('').sort.join('')
-    @words_array.each do |word| word.split('').sort.join('')
+    @words_array.each do |word|
+      word.split('').sort.join('')
 
     end
 
