@@ -9,7 +9,7 @@ class Anagram
 
   def match(words_array)
     @words_array = words_array
-    @words_array.each { |word| word.sort}
+    @words_array.each { |word| word.map.sort}
   end
 
 end
