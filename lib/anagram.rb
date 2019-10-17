@@ -10,10 +10,10 @@ class Anagram
   def match(words_array)
     matched_words = Array.new
     @words_array = words_array
-    @sorted_word = @word.split('').sort.join('')
+    sorted_word = @word.split('').sort.join('')
     @words_array.each do |word|
-      word = word.split('').sort.join('')
-      matched_words << word if word == @word
+      sorted_word = word.split('').sort.join('')
+      matched_words <<  if word == @word
     end
     matched_words
   end
