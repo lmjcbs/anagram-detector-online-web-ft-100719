@@ -12,7 +12,7 @@ class Anagram
     @words_array = words_array
     @word = @word.split('').sort.join('')
     @words_array.each do |word|
-      word =word.split('').sort.join('')
+      word = word.split('').sort.join('')
 
 
     end
