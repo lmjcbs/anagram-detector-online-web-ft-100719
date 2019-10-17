@@ -8,9 +8,11 @@ class Anagram
   end
 
   def match(words_array)
+    matched_words = Array.new
     @words_array = words_array
     @word = @word.split('').sort.join('')
     @words_array.each { |word| word.split('').sort.join('') }
+
   end
 
 end
