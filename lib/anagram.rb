@@ -13,7 +13,7 @@ class Anagram
     sorted_word = @word.split('').sort.join('')
     @words_array.each do |word|
       sorted_array_word = word.split('').sort.join('')
-      matched_words << word if sorted_word == sorted_word
+      matched_words << word if sorted_word == sorted_array_word
     end
     matched_words
   end
